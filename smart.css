@@ -1,0 +1,94 @@
+*{
+    padding:0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100px;
+    height: 500px;
+    
+    padding: 40px 4px;
+    font-family: roboto;
+    color: rgb(0, 0, 0);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    margin-top: 24px;
+    color: #34115c;
+    font-size: 30px;
+    font-weight: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+p{
+    padding: 20px;
+    font-size: 22px;
+    text-align: justify;
+}
+/* Rodapé*/
+footer {
+      display: grid;
+      place-items: center;
+      padding: px;
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      border-radius: 10px;
+   }
+ footer img{
+    margin: 0 auto;
+ }
+ footer p{
+    margin-top: 5px;
+    text-align: center;
+ }
+ .teste{
+    display: flex;
+    margin: -3px;
+ }
+ #logo{
+    margin-left: 59px;
+    margin-top: 20px;
+    height: 99px;
+    filter: drop-shadow(2px 2px 2px rgba(211, 0, 0, 0.336));
+ }
+ #etpm{
+
+   margin-top: 20px;
+   margin-right: 120px;
+}
+#eco{
+
+   margin-top: 13px;
+   margin-left: 195px;
+}
+.column{
+   
+    height: 100%;
+    margin-top: 12px;
+    border-radius: 10px;
+    box-shadow: #8164043b 0px 4px 20px 5px;
+ }
+ .column{
+   height: 100%;
+   margin-top: 12px;
+   border-radius: 10px;
+   box-shadow: #8164043b 0px 4px 20px 5px;
+}
+ #keypad{
+     width: 600px;
+     height: 400px;
+     border-radius: 10px;
+     box-shadow: #000000ba 0px 4px 20px 5px;
+ }
+ #kitchen{
+          margin: 16px;
+            margin-left: 0px;
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: #000000ba 0px 4px 20px 5px;
+ }

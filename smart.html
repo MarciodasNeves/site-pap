@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="smart.css">
+    <title>Paradise</title>
+    <link rel="shortcut icon" href="image/moon.png" type="image/x-icon">
+
+<style>
+  /*Colunas*/
+  * {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 49%;
+  margin: 6px;
+  margin-top: 6px;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+    /* Barra de navegação fixa*/
+    body {margin:0;}
+
+  ul {
+    z-index: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+ }
+ li {
+  float: left;
+  border-right:2px solid #bbb;
+ }
+
+ li:last-child {
+  border-right: none;
+ }
+ li {
+  float: left;
+ }
+
+ li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+ }
+
+ li a:hover:not(.active) {
+  background-color: #111;
+ }
+
+ .active {
+  background-color: #04AA6D;
+}
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('image/tinker.png');
+ /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+      <body>
+        <ul>
+         <li><a href="p_inicial.html">Página Inicial</a></li>
+         <li><a class="active" href="smart.html">Smart</a></li>
+         <li><a href="acerca.html">Acerca</a></li>
+         </ul>
+              <div class="parallax"></div>
+              <div style="height:1000px;background-color:rgb(255, 255, 255)">
+             
+            <div class="row">
+            <div class="column" style="background-color:#aaa;">
+              <h1>Conceção do Projeto</h1>
+           <p>
+            <br>Com a execução desse projeto, tenho como objetivo reduzir ao máximo possível o consumo desnecessário da energia elétrica reduzindo/minimizando o tempo de funcionamento das lâmpadas, luminárias quando o uso das mesmas não forem mais necessário. <br><br>E para tal redução, pretendo usar lâmpadas de Led (porque o uso dessas lâmpadas será essencial na redução do consumo elétrico isto porque, as mesmas consomem pouca energia, porém produzem um alto nível de luminosidade ou superior do que as lâmpadas incandescentes que para além de não serem económicas, não são sustentáveis). Os sensores de movimento serão usados de modo a controlar os movimentos dentro da residência e de acordo com as informações captadas pelos sensores, as mesmas informações serão encaminhas para a “central de controlo (Arduíno)” permitindo assim que as luzes acendam ou mantenham apagadas. <br>
+            <br>Após a conclusão do projeto, o objetivo é expandir o mesmo projeto de automação residencial para toda a casa, adicionando mais sensores como: sensores de luminosidade, temperatura etc. e aplicar os novos modelos de automação residencial não se limitando apenas na parte do consumo elétrico desnecessário, mas também pela parte estética.</p>
+           </div>
+    <div class="column" style="background-color:#aaa;">
+    <p><img src="image/keypad.jpg" alt="grid" style="width:100%;" id="keypad"></p><br>
+       <img src="image/spherical.jpg" alt="grid" style="width:100%;" id="kitchen">
+  </div>
+</div>
+          </div>
+          <footer >
+            <div class="teste">
+                <img src="image/etpm.png" style="width:100%;" id="etpm">
+                <img src="image/footer.png" style="width:100%;" id="logo">
+                <img src="image/eco.png" style="width:100%;" id="eco">
+            </div>
+            <p>Site criado por Márcio das Neves para Prova de Aptidão Profissional</p>
+        </footer>
+      </body>
+</html>

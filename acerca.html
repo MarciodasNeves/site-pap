@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="acerca.css">
+    <title>Paradise</title>
+    <link rel="shortcut icon" href="image/moon.png" type="image/x-icon">
+
+<style>
+  /*Parallax*/
+  body, html {
+  height: 85%; 
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('image/vw.png');
+
+  /* Full height */
+  height: 100%; 
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    /* Barra de navegação fixa*/
+    body {margin:0;}
+
+ul {
+  z-index: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(17, 17, 17);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li {
+  float: left;
+  border-right:2px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(250, 250, 250);
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
+</head>
+  <body>
+    <ul>
+      
+        <li><a href="p_inicial.html">Página Inicial</a></li>
+        <li><a href="smart.html">Smart</a></li>
+        <li><a class="active" href="acerca.html">Acerca</a></li>  
+    </ul>
+    
+      <div class="parallax"><br><br><br><br><br><br><h1>Informações Pessoais</h1></div>
+      <div style="height:300px;background-color:rgb(255, 255, 255);font-size:16px">
+    <p>
+      <br> Márcio das Neves,Técnico de Eletrónica, Automação e Computadores, um recém-formado que pretende aperfeiçoar e evoluir no mundo do trabalho, deixando a sua residência tão independente quanto possível.<br><br>
+     Para mais informações, clique no botão abaixo! <br><br>
+     
+     <a href="image/cv.pdf.pdf" target="_blank" rel="external"><button class="button-85" role="button">CV</button></a>
+    </p>
+      </div>
+      <div class="parallax"></div>
+      <footer >
+        <div class="teste">
+            <img src="image/etpm.png" id="etpm">
+            <img src="image/footer.png" id="logo">
+            <img src="image/eco.png"   id="eco">
+        </div>
+        <p>Site created by Márcio das Neves for Prova de Aptidão Profissional</p>
+    </footer>
+  </body>
+</html>
